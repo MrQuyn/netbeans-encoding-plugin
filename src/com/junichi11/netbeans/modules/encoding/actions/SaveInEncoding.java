@@ -55,7 +55,7 @@ public final class SaveInEncoding extends CookieAction {
         if (f == null) {
             f = FileUtil.normalizeFile(new File(new File(System.getProperty("user.name")), fo.getNameExt()));
         }
-        final EncodingFileChooser chooser = new EncodingFileChooser(); // Always suggest the default encoding
+        final EncodingFileChooser chooser = new EncodingFileChooser(StandardCharsets.UTF_8); // Always suggest the default encoding StandardCharsets.UTF_8
         chooser.setCurrentDirectory(null);
         chooser.setDialogTitle(NbBundle.getMessage(OpenInEncoding.class, "TXT_SaveFile"));
         chooser.setApproveButtonText(NbBundle.getMessage(OpenInEncoding.class, "CTL_Save"));
