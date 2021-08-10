@@ -30,6 +30,7 @@ import org.openide.util.HelpCtx;
 import org.openide.util.NbBundle;
 import org.openide.util.actions.CookieAction;
 import org.openide.windows.WindowManager;
+import java.nio.charset.StandardCharsets;
 
 @ActionID(id = "com.junichi11.netbeans.modules.encoding.actions.SaveInEncoding", category = "File")
 @ActionRegistration(lazy = false, displayName = "Save In Encoding...")
